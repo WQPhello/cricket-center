@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="vpMz0_hj8vdWcWKOoza5" name="第 1 页">
+        <mxGraphModel dx="2709" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;strokeColor=#000000;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="边缘端1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=24;strokeColor=#000000;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="边缘端2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;strokeColor=#000000;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="边缘端n" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="中心&lt;br&gt;云平台" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="330" width="100" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h1&gt;一、边缘端 --&amp;gt; 中心端&lt;/h1&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1. 项目上线、配置修改时，主动向中心端传输本项目的基础信息和配置信息（项目编号、项目名称、位置、配置等）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;2. 项目上线、传感器更新时，主动向中心端传输本项目的传感器信息（传感器编号、位置、正常/异常状态等）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;3. 监测到微震事件时，主动向中心端传输本事件的相关信息（事件编号、发震位置、发震时间、定位时间、震源参数、触发的传感器详情、各传感器的对应波形等）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;4. 人工干预指定事件时，主动向中心端传输本事件的相关信息，中心端更新对应的数据&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;5. &lt;i&gt;&lt;font color=&quot;#009900&quot;&gt;TODO&lt;/font&gt;&lt;/i&gt;&amp;nbsp; 检测预警信息时，主动向中心端传递预警相关信息（预警位置、预警等级、预警参数等）&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=24;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="258" y="860" width="1810" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;h1&gt;二、中心端&lt;/h1&gt;&lt;div&gt;1. 登录功能&lt;/div&gt;&lt;div&gt;2. 边缘端项目列表的查看功能（项目状态、项目配置等）&lt;/div&gt;&lt;div&gt;3. 分项目传感器列表的查看功能（传感器状态、传感器位置等）&lt;/div&gt;&lt;div&gt;4. 分项目事件列表的查看功能（事件位置、时间、震源参数、对应传感器信息等）&lt;/div&gt;&lt;div&gt;5. 事件的统计功能&lt;/div&gt;&lt;div&gt;6. 分项目微震事件波形的查看和下载功能&lt;/div&gt;&lt;div&gt;7. 中心服务器的监控功能&lt;/div&gt;8. &lt;i&gt;&lt;font color=&quot;#009900&quot;&gt;TODO&lt;/font&gt;&lt;/i&gt; 边缘端的控制功能，后续再考虑&lt;div&gt;9. &lt;font color=&quot;#009900&quot;&gt;&lt;i&gt;TODO&lt;/i&gt;&lt;/font&gt; 预警信息的实时通知功能，&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=24;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1060" y="360" width="994" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=none;dashed=1;html=1;fontSize=24;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="374" y="680" as="sourcePoint"/>
+                        <mxPoint x="374" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
