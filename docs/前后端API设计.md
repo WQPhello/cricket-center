@@ -1,7 +1,7 @@
 # <center>微震平台中心端-前后端API设计</center>
 
 
-### 1.获取验证码
+## 1.获取验证码
 - GET /v1/captcha
 - 备注：若登录时验证码验证失败，前端需要立即刷新验证码
 - 响应 body：json
@@ -17,7 +17,7 @@
 ```
 
 
-### 2.登录
+## 2.登录
 - POST /v1/login
 - 备注：除了获取验证码和登录请求外，其他请求需携带 token
 - 请求 body：json
@@ -42,7 +42,7 @@
 ```
 
 
-### 3.查询项目列表
+## 3.查询项目列表
 - GET /v1/projects
 - 请求参数：
   - project_number?:string //项目编号，模糊查询
@@ -80,7 +80,7 @@
 ```
 
 
-### 4.修改边缘端项目状态
+## 4.修改边缘端项目状态
 - PUT /v1/projects/status
 - 请求参数：
   - project_number:string //项目编号
@@ -97,7 +97,7 @@
 ```
 
 
-### 5.修改边缘端项目参数
+## 5.修改边缘端项目参数
 - PUT /v1/projects/configurations
 - 请求参数：json
 ```go
@@ -126,7 +126,7 @@
 ```
 
 
-### 6.查询传感器列表
+## 6.查询传感器列表
 - GET /v1/sensors
 - 请求参数：
   - project_number?:string //所属项目编号，不传递时查询全部项目的数据
@@ -162,7 +162,7 @@
 ```
 
 
-### 7.查询指定事件列表
+## 7.查询指定事件列表
 - GET /v1/events
 - 请求参数：
   - project_number?:string //所属项目编号，不传递时查询全部项目的数据
@@ -238,7 +238,7 @@
 ```
 
 
-### 8.查询指定事件波形
+## 8.查询指定事件波形
 - GET /v1/events/waves?event_code=string&project_number=string 
 - 响应body：json
 ```go
@@ -260,14 +260,14 @@
 ```
 
 
-### 9.下载指定事件波形
+## 9.下载指定事件波形
 - GET /v1/events/waves/download?event_code=string&project_number=string
 - 响应：
   成功时状态码为 200，并返回压缩文件，Content-Type: application/octet-stream
   失败时状态码为 400，并返回提示信息
 
 
-### 10.微震事件统计
+## 10.微震事件统计
 - GET /v1/events/statistics
 - 请求参数：
   - project_number?:string //所属项目编号，不传递时查询全部项目的数据
@@ -292,7 +292,7 @@
 ```
 
 
-### 11.手动进行微震事件定位(人工干预)
+## 11.手动进行微震事件定位(人工干预)
 - POST /v1/events/manual
 - 请求参数：json
 ```go
@@ -351,7 +351,7 @@
 ```
 
 
-### 12.替换定位结果(人工干预)
+## 12.替换定位结果(人工干预)
 - PUT /v1/events/manual
 - 请求 body：json
 ```go
@@ -396,7 +396,7 @@
 ```
 
 
-### 13.删除指定事件
+## 13.删除指定事件
 - DELETE /v1/events/delete?project_number=string&event_code=string
 - 响应 body：json
 ```go
@@ -407,6 +407,6 @@
 ```
 
 
-## TODO
-### 1. 边缘项目实时流数据，后端再考虑，页面跳转的方式或websocket方式
-### 2. 预警相关，下一版本
+# TODO
+## 1. 边缘项目实时流数据，后端再考虑，页面跳转的方式或websocket方式
+## 2. 预警相关，下一版本
